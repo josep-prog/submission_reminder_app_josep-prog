@@ -1,3 +1,21 @@
-student, assignment, submission status
-here, Shell Navigation, submitted
-Noel, Shell Navigation, not submitted
+#!/bin/bash
+
+# Create the main application directory
+mkdir -p submission_reminder_app/data
+
+echo "student, assignment, submission status"
+echo "here, Shell Navigation, submitted"
+echo "Noel, Shell Navigation, not submitted"
+
+cd submission_reminder_app/data
+ 
+# Add additional records to submissions.txt    
+{  
+    echo "John Doe,2024-10-10"
+    echo "Jane Smith,2024-10-12"
+    echo "Alice Johnson,2024-10-15"
+    echo "Bob Brown,2024-10-20"
+    echo "Charlie Green,2024-10-25"
+} >> submissions.txt
+
+echo "Added additional records to submissions.txt."
