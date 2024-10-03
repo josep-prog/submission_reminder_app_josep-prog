@@ -2,10 +2,10 @@
 
 # Define variables
 APP_NAME="reminder-app"  # Updated to match the directory name
-APP_DIR="/path/to/your/reminder-app"  # Update this to the correct path
+APP_DIR="reminder-app/"  # Update this to the correct path
 LOG_FILE="$APP_DIR/app.log"
 PYTHON_EXEC="python3"  # or "python" based on your setup
-
+   
 # Function to check if the app is running
 is_running() {
     pgrep -f "$APP_NAME" > /dev/null 2>&1
